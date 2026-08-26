@@ -23,7 +23,7 @@ function Navbar() {
                     onClick={closeMenu}
                     className="font-mono text-sm font-medium tracking-wider text-white transition-colors hover:text-accent-red"
                 >
-                    SHUBH SHUBH
+                    Sunny Kumar Rana
                 </a>
 
                 <div className="hidden items-center gap-8 md:flex">
