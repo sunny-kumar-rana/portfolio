@@ -5,68 +5,95 @@ const projects = [
         title: 'Hoster',
         subtitle: 'Hostel Management System',
         description:
-            'A full-stack hostel management application for managing hostels, rooms, beds, residents, occupancy and rent.',
+            'A full-stack hostel management system for managing hostels, rooms, beds, residents, occupancy and rent.',
         technologies: [
-            'Spring Boot',
-            'Spring Security',
-            'PostgreSQL',
-            'JPA',
-            'React',
-        ],
-        accent: 'red',
-        github: 'https://github.com/sunny-kumar-rana',
-        demo: null,
-    },
-    {
-        id: 'hydration-tracker',
-        number: '02',
-        title: 'Hydration Tracker',
-        subtitle: 'Water Tracking Application',
-        description:
-            'A full-stack application for tracking daily water intake with authentication, dashboards and statistics.',
-        technologies: [
-            'Spring Boot',
-            'Spring Security',
-            'PostgreSQL',
-            'React',
-        ],
-        accent: 'blue',
-        github: 'https://github.com/sunny-kumar-rana',
-        demo: null,
-    },
-    {
-        id: 'digital-wallet',
-        number: '03',
-        title: 'Digital Wallet',
-        subtitle: 'Wallet & Transaction System',
-        description:
-            'A digital wallet application focused on user authentication, wallet management and transaction processing.',
-        technologies: [
+            'Java 21',
             'Spring Boot',
             'Spring Security',
             'JWT',
             'PostgreSQL',
             'React',
         ],
-        accent: 'blue',
-        github: 'https://github.com/sunny-kumar-rana',
+        status: 'Backend complete · Frontend in development',
+        accent: 'red',
+        github: {
+            backend: 'https://github.com/sunny-kumar-rana/Hoster-Backend',
+            frontend: 'https://github.com/sunny-kumar-rana/hoster-frontend',
+        },
         demo: null,
     },
+
+    {
+        id: 'hydration-tracker',
+        number: '02',
+        title: 'Hydration Tracker',
+        subtitle: 'Hydration Tracking Application',
+        description:
+            'A full-stack hydration tracking application with progress analytics, streak tracking and automated hydration reminders.',
+        technologies: [
+            'Java 21',
+            'Spring Boot',
+            'Spring Security',
+            'JWT',
+            'PostgreSQL',
+            'React',
+        ],
+        status: 'Full-stack',
+        accent: 'blue',
+        github: {
+            backend:
+                'https://github.com/sunny-kumar-rana/hydration-reminder-backend',
+            frontend:
+                'https://github.com/sunny-kumar-rana/hydration-tracker-frontend',
+        },
+        demo: null,
+    },
+
+    {
+        id: 'digital-wallet',
+        number: '03',
+        title: 'Digital Wallet',
+        subtitle: 'Wallet & Transaction System',
+        description:
+            'A digital wallet application with authenticated wallet operations, transfers, balance validation and transaction history.',
+        technologies: [
+            'Spring Boot',
+            'Spring Security',
+            'JWT',
+            'JPA',
+            'Oracle',
+            'React',
+        ],
+        status: 'Full-stack',
+        accent: 'blue',
+        github: {
+            backend:
+                'https://github.com/sunny-kumar-rana/digital-wallet-springboot',
+            frontend:
+                'https://github.com/sunny-kumar-rana/digital-wallet-frontend',
+        },
+        demo: null,
+    },
+
     {
         id: 'game-hub',
         number: '04',
         title: 'Game Hub',
-        subtitle: 'Browser Game Collection',
+        subtitle: 'Browser Games Collection',
         description:
-            'An interactive web application containing browser-based games including Snake, Sudoku, Tic-Tac-Toe and puzzles.',
+            'A collection of browser games built from scratch with Vanilla JavaScript, including Snake, Sudoku, an image slide puzzle and Tic-Tac-Toe.',
         technologies: [
+            'HTML5',
+            'CSS3',
             'JavaScript',
-            'HTML',
-            'CSS',
+            'Algorithms',
         ],
+        status: 'Complete',
         accent: 'red',
-        github: 'https://github.com/sunny-kumar-rana',
-        demo: 'https://sunny-kumar-rana.github.io/game-hub/',
+        github: {
+            repository: 'https://github.com/sunny-kumar-rana/game-hub',
+        },
+        demo: null,
     },
 ]
 

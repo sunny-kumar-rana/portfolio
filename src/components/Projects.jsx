@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import projects from '../data/projects'
 
 function Projects() {
@@ -74,24 +75,52 @@ function Projects() {
                                                 </span>
                                             ))}
                                         </div>
+
+                                        <p className="mt-6 text-xs text-neutral-600">
+                                            {project.status}
+                                        </p>
                                     </div>
 
-                                    <div className="mt-10 flex items-center gap-6">
-                                        <a
-                                            href={project.github}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="text-sm text-neutral-300 transition-colors hover:text-accent-red"
-                                        >
-                                            GitHub ↗
-                                        </a>
+                                    <div className="mt-10 flex flex-wrap items-center gap-6">
+                                        {project.github.backend && (
+                                            <a
+                                                href={project.github.backend}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                className="text-sm text-neutral-300 transition-colors hover:text-accent-red"
+                                            >
+                                                Backend ↗
+                                            </a>
+                                        )}
 
-                                        <button onClick={() => window.open(project.demo, '_blank')}
-                                            type="button"
-                                            className="text-sm text-neutral-500 transition-colors hover:text-accent-blue"
+                                        {project.github.frontend && (
+                                            <a
+                                                href={project.github.frontend}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                className="text-sm text-neutral-300 transition-colors hover:text-accent-blue"
+                                            >
+                                                Frontend ↗
+                                            </a>
+                                        )}
+
+                                        {project.github.repository && (
+                                            <a
+                                                href={project.github.repository}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                className="text-sm text-neutral-300 transition-colors hover:text-accent-red"
+                                            >
+                                                Repository ↗
+                                            </a>
+                                        )}
+
+                                        <Link
+                                            to={`/projects/${project.id}`}
+                                            className="text-sm text-neutral-500 transition-colors hover:text-white"
                                         >
                                             View Project →
-                                        </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
