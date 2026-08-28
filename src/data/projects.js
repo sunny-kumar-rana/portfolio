@@ -64,21 +64,55 @@ const projects = [
             'A full-stack hydration tracking application with progress analytics, streak tracking and automated hydration reminders.',
         technologies: [
             'Java 21',
-            'Spring Boot',
+            'Spring Boot 4',
             'Spring Security',
             'JWT',
+            'Spring Data JPA',
             'PostgreSQL',
-            'React',
+            'Spring Mail',
+            'OpenAPI',
+            'React 19',
+            'Vite',
+            'Tailwind CSS',
+            'Recharts',
         ],
         status: 'Full-stack',
-        accent: 'blue',
+
+        features: [
+            'JWT-based user authentication',
+            'Daily water-intake tracking',
+            'Personal hydration goals',
+            'Dashboard with daily progress',
+            'Weekly and monthly statistics',
+            'Hydration streak tracking',
+            'Profile and password management',
+            'Scheduled hydration reminders',
+            'Email notifications',
+            'Telegram notifications',
+        ],
+
+        technicalHighlights: [
+            'Timezone-aware reminder scheduling',
+            'Automated reminders based on individual hydration goals',
+            'Daily goal-achievement detection with duplicate notification prevention',
+            'Statistics and progress aggregation for daily, weekly and monthly periods',
+            'JWT-based stateless authentication',
+            'Centralized exception handling and request validation',
+        ],
+
+        architecture:
+            'React frontend → REST API → Spring Boot → PostgreSQL',
+
         github: {
             backend:
                 'https://github.com/sunny-kumar-rana/hydration-reminder-backend',
             frontend:
                 'https://github.com/sunny-kumar-rana/hydration-tracker-frontend',
         },
+
         demo: null,
+
+        accent: 'blue',
     },
 
     {
