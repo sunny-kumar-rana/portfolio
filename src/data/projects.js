@@ -176,19 +176,44 @@ const projects = [
         title: 'Game Hub',
         subtitle: 'Browser Games Collection',
         description:
-            'A collection of browser games built from scratch with Vanilla JavaScript, including Snake, Sudoku, an image slide puzzle and Tic-Tac-Toe.',
+            'A collection of browser games built from scratch with HTML, CSS and Vanilla JavaScript, including Snake, Sudoku, an image slide puzzle and Tic-Tac-Toe.',
         technologies: [
             'HTML5',
             'CSS3',
-            'JavaScript',
-            'Algorithms',
+            'Vanilla JavaScript',
+            'Google Fonts',
         ],
         status: 'Complete',
-        accent: 'red',
+
+        features: [
+            'Classic Snake game with scoring and collision detection',
+            'Sudoku with Easy, Medium and Hard difficulty levels',
+            'Dynamic Sudoku puzzle generation',
+            'Backtracking-based Sudoku solver',
+            'Image slide puzzle with dynamic image slicing',
+            'Tic-Tac-Toe browser game',
+            'Timers and score tracking',
+            'Responsive user interfaces',
+        ],
+
+        technicalHighlights: [
+            'Implemented the games without frameworks or external libraries',
+            'Built a Sudoku puzzle generator and backtracking solver',
+            'Implemented game-state and collision logic in Vanilla JavaScript',
+            'Used dynamic image slicing for the slide puzzle',
+        ],
+
+        architecture:
+            'HTML / CSS / JavaScript → Browser',
+
         github: {
-            repository: 'https://github.com/sunny-kumar-rana/game-hub',
+            repository:
+                'https://github.com/sunny-kumar-rana/game-hub',
         },
+
         demo: null,
+
+        accent: 'red',
     },
 ]
 
