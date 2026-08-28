@@ -121,24 +121,53 @@ const projects = [
         title: 'Digital Wallet',
         subtitle: 'Wallet & Transaction System',
         description:
-            'A digital wallet application with authenticated wallet operations, transfers, balance validation and transaction history.',
+            'A digital wallet application with authenticated wallet operations, balance validation, wallet transfers and transaction history.',
         technologies: [
-            'Spring Boot',
+            'Spring Boot 3.5',
             'Spring Security',
             'JWT',
-            'JPA',
+            'Spring Data JPA',
             'Oracle',
-            'React',
+            'React 19',
+            'Axios',
+            'Tailwind CSS',
         ],
         status: 'Full-stack',
-        accent: 'blue',
+
+        features: [
+            'User registration and authentication',
+            'JWT-based authentication',
+            'Wallet creation and management',
+            'Deposit and withdrawal operations',
+            'Balance validation',
+            'Wallet-to-wallet transfers',
+            'Transaction history',
+            'Request validation',
+            'Global exception handling',
+        ],
+
+        technicalHighlights: [
+            'Transactional money operations',
+            'Insufficient-balance validation for withdrawals and transfers',
+            'Pessimistic locking during wallet transfers',
+            'Consistent wallet lock ordering to reduce deadlock risk',
+            'Authenticated-user context through Spring Security',
+            'Domain-specific exception handling',
+        ],
+
+        architecture:
+            'React frontend → REST API → Spring Boot → Oracle',
+
         github: {
             backend:
                 'https://github.com/sunny-kumar-rana/digital-wallet-springboot',
             frontend:
                 'https://github.com/sunny-kumar-rana/digital-wallet-frontend',
         },
+
         demo: null,
+
+        accent: 'blue',
     },
 
     {
