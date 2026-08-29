@@ -8,6 +8,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import ProjectDetails from './pages/ProjectDetails'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function Home() {
   const location = useLocation()
@@ -38,6 +39,7 @@ function Home() {
         <Skills />
         <Projects />
         <Contact />
+        <Footer />
       </main>
     </>
   )
