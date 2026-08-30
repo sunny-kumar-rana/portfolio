@@ -1,16 +1,130 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with **React**, **Vite**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+The site is designed to present my work, projects, skills, and background through a minimal, developer-focused interface with a strong visual identity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+* **React** — UI development
+* **Vite** — Development server and build tooling
+* **Tailwind CSS** — Styling and responsive design
+* **React Router** — Client-side routing
+* **Google Fonts**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  * Inter
+  * JetBrains Mono
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Responsive portfolio layout
+* Modern dark-themed interface
+* Hero / introduction section
+* About section
+* Skills / technologies section
+* Projects showcase
+* Individual project detail pages
+* Navigation between portfolio sections and project pages
+* Smooth scrolling
+* Custom text-selection styling
+* Minimal scrollbar styling
+* Centralized design tokens for colors, spacing, and typography
+
+## Design
+
+The visual system is intentionally minimal and developer-oriented.
+
+### Color Palette
+
+* **Deep Black** — Primary background
+* **White / Off-white** — Primary text
+* **Red** — Primary accent
+* **Blue** — Secondary accent
+
+### Typography
+
+**Inter** is used for the primary interface typography, while **JetBrains Mono** is used for technical and code-oriented elements.
+
+## Project Structure
+
+```text
+portfolio/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── ...
+├── index.html
+├── package.json
+├── vite.config.js
+└── ...
+```
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have **Node.js** and **npm** installed.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Navigate into the project:
+
+```bash
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+### Development
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at the local address shown by Vite.
+
+### Production Build
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Routing
+
+The portfolio uses **React Router** for client-side navigation.
+
+Project pages are separated from the main portfolio experience so individual projects can be viewed in greater detail while still allowing navigation back to the Projects section.
+
+## Development
+
+This project is actively developed as a personal portfolio and may evolve as new projects, technologies, and improvements are added.
+
+## License
+
+This project is intended for personal portfolio use.
+
+You may use the structure and ideas for learning purposes, but please do not present the original work or content as your own.
