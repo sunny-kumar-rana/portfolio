@@ -21,7 +21,7 @@ function Navbar() {
                 <a
                     href="#"
                     onClick={closeMenu}
-                    className="font-mono text-sm font-medium tracking-wider text-white transition-colors hover:text-accent-red"
+                    className="font-mono text-lg font-medium tracking-wider text-white transition-colors hover:text-accent-red"
                 >
                     Sunny Kumar Rana
                 </a>
