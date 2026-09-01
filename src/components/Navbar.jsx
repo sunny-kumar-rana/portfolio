@@ -26,29 +26,41 @@ function Navbar() {
             return
         }
 
-        const sections = navLinks
-            .map((link) => document.querySelector(link.href))
-            .filter(Boolean)
+        const updateActiveSection = () => {
+            const scrollY = window.scrollY
 
-        const observer = new IntersectionObserver(
-            (entries) => {
-                const visibleSection = entries.find(
-                    (entry) => entry.isIntersecting
-                )
-
-                if (visibleSection) {
-                    setActiveSection(`#${visibleSection.target.id}`)
-                }
-            },
-            {
-                rootMargin: '-25% 0px -60% 0px',
-                threshold: 0,
+            // No section is active while viewing the Hero.
+            if (scrollY < window.innerHeight * 0.5) {
+                setActiveSection('')
+                return
             }
-        )
 
-        sections.forEach((section) => observer.observe(section))
+            const scrollPosition = scrollY + 140
+            let currentSection = ''
 
-        return () => observer.disconnect()
+            navLinks.forEach((link) => {
+                const section = document.querySelector(link.href)
+
+                if (section && section.offsetTop <= scrollPosition) {
+                    currentSection = link.href
+                }
+            })
+
+            setActiveSection(currentSection)
+        }
+
+        updateActiveSection()
+
+        window.addEventListener('scroll', updateActiveSection, {
+            passive: true,
+        })
+
+        window.addEventListener('resize', updateActiveSection)
+
+        return () => {
+            window.removeEventListener('scroll', updateActiveSection)
+            window.removeEventListener('resize', updateActiveSection)
+        }
     }, [location.pathname])
 
     const handleNavigation = (href) => {

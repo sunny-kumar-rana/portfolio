@@ -61,3 +61,24 @@ button {
 section {
   scroll-margin-top: 5rem;
 }
+
+.project-link {
+  transition:
+    color 300ms ease,
+    text-shadow 300ms ease,
+    transform 300ms ease;
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+}
+
+.project-link-red:hover {
+  color: var(--color-accent-red);
+  text-shadow: 0 0 12px rgb(255 45 45 / 65%);
+}
+
+.project-link-blue:hover {
+  color: var(--color-accent-blue);
+  text-shadow: 0 0 12px rgb(59 130 246 / 65%);
+}

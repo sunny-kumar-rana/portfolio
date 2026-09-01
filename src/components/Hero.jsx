@@ -15,8 +15,8 @@ function Hero() {
                     </h1>
 
                     <p className="mt-8 max-w-xl text-base leading-7 text-neutral-400 sm:text-lg">
-                        I build backend-driven web applications with Spring Boot
-                        and modern React interfaces.
+                        I build backend-driven web applications with Spring Boot,
+                        React, and modern web technologies.
                     </p>
 
                     <div className="mt-10 flex flex-wrap gap-4">
