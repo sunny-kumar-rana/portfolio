@@ -9,6 +9,7 @@ import Projects from './components/Projects'
 import ProjectDetails from './pages/ProjectDetails'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 function Home() {
   const location = useLocation()
@@ -47,14 +48,18 @@ function Home() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
+    <>
+      <ScrollToTop />
 
-      <Route
-        path="/projects/:projectId"
-        element={<ProjectDetails />}
-      />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route
+          path="/projects/:projectId"
+          element={<ProjectDetails />}
+        />
+      </Routes>
+    </>
   )
 }
 
