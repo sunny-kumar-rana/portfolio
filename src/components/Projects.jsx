@@ -43,13 +43,13 @@ function Projects() {
                         return (
                             <article
                                 key={project.id}
-                                className="group overflow-hidden border border-white/10 transition-colors duration-300 hover:border-white/20"
+                                className="group overflow-hidden border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20"
                             >
                                 <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
                                     {/* Visual */}
                                     <div className="relative flex min-h-64 items-center justify-center overflow-hidden bg-neutral-950 p-8 lg:min-h-[28rem]">
                                         <div
-                                            className={`absolute h-56 w-56 rounded-full ${accentGlow} blur-3xl transition-all duration-500 group-hover:scale-125`}
+                                            className={`absolute h-56 w-56 rounded-full ${accentGlow} blur-3xl transition-all duration-700 group-hover:scale-125 group-hover:opacity-80`}
                                         />
 
                                         <div
