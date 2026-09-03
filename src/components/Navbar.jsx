@@ -2,6 +2,15 @@ import { Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
+
+
+const navLinks = [
+    { label: 'About', href: '#about' },
+    { label: 'Skills', href: '#skills' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'Contact', href: '#contact' },
+]
+
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
     const [activeSection, setActiveSection] = useState('')
@@ -9,27 +18,18 @@ function Navbar() {
     const location = useLocation()
     const navigate = useNavigate()
 
-    const navLinks = [
-        { label: 'About', href: '#about' },
-        { label: 'Skills', href: '#skills' },
-        { label: 'Projects', href: '#projects' },
-        { label: 'Contact', href: '#contact' },
-    ]
-
     const closeMenu = () => {
         setIsOpen(false)
     }
 
     useEffect(() => {
         if (location.pathname !== '/') {
-            setActiveSection('')
             return
         }
 
         const updateActiveSection = () => {
             const scrollY = window.scrollY
 
-            // No section is active while viewing the Hero.
             if (scrollY < window.innerHeight * 0.5) {
                 setActiveSection('')
                 return
@@ -48,8 +48,6 @@ function Navbar() {
 
             setActiveSection(currentSection)
         }
-
-        updateActiveSection()
 
         window.addEventListener('scroll', updateActiveSection, {
             passive: true,
@@ -104,7 +102,7 @@ function Navbar() {
                             key={link.href}
                             type="button"
                             onClick={() => handleNavigation(link.href)}
-                            className={`text-sm transition-colors ${activeSection === link.href
+                            className={`text-sm transition-colors ${location.pathname === '/' && activeSection === link.href
                                 ? 'text-accent-red'
                                 : 'text-neutral-400 hover:text-accent-red'
                                 }`}
@@ -141,7 +139,7 @@ function Navbar() {
                                 key={link.href}
                                 type="button"
                                 onClick={() => handleNavigation(link.href)}
-                                className={`text-left text-sm transition-colors ${activeSection === link.href
+                                className={`text-left text-sm transition-colors ${location.pathname === '/' && activeSection === link.href
                                     ? 'text-accent-red'
                                     : 'text-neutral-300 hover:text-accent-red'
                                     }`}
