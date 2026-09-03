@@ -20,10 +20,6 @@ function Projects() {
 
                 <div className="space-y-6">
                     {projects.map((project) => {
-                        const accent =
-                            project.accent === 'red'
-                                ? 'accent-red'
-                                : 'accent-blue'
 
                         const accentText =
                             project.accent === 'red'
