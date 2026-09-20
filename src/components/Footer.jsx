@@ -17,14 +17,14 @@ function Footer() {
                     </a>
 
                     <a
-                        href="mailto:krsunny3@outlook.com"
+                        href="mailto:sunnykumarrana.dev@gmail.com"
                         className="transition-colors hover:text-accent-blue"
                     >
                         Email ↗
                     </a>
 
                     <a
-                        href="https://www.linkedin.com/in/su-sunny-dev/"
+                        href="https://www.linkedin.com/in/sunny-kr-rana/"
                         target="_blank"
                         rel="noreferrer"
                         className="transition-colors hover:text-accent-blue"

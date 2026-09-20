@@ -37,7 +37,7 @@ function Contact() {
                     </a>
 
                     <a
-                        href="mailto:krsunny3@outlook.com"
+                        href="mailto:sunnykumarrana.dev@gmail.com"
                         className="group border border-white/10 bg-neutral-950/40 p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent-blue/30"
                     >
                         <p className="font-mono text-xs tracking-[0.2em] text-accent-blue">
@@ -45,12 +45,12 @@ function Contact() {
                         </p>
 
                         <p className="mt-4 text-sm text-neutral-500 transition-colors duration-300 group-hover:text-neutral-300">
-                            krsunny3@outlook.com ↗
+                            sunnykumarrana.dev@gmail.com ↗
                         </p>
                     </a>
 
                     <a
-                        href="https://www.linkedin.com/in/su-sunny-dev/"
+                        href="https://www.linkedin.com/in/sunny-kr-rana/"
                         target="_blank"
                         rel="noreferrer"
                         className="group border border-white/10 bg-neutral-950/40 p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent-blue/30"
@@ -60,7 +60,7 @@ function Contact() {
                         </p>
 
                         <p className="mt-4 text-sm text-neutral-500 transition-colors duration-300 group-hover:text-neutral-300">
-                            su-sunny-dev ↗
+                            sunny-kr-rana ↗
                         </p>
                     </a>
                 </div>
