@@ -111,6 +111,71 @@ function ProjectDetails() {
                 </div>
 
 
+                {/* Screenshots */}
+                {project.screenshots?.length > 0 && (
+                    <section className="mt-20 border-t border-white/10 pt-12">
+                        <p className="font-mono text-xs tracking-[0.2em] text-neutral-600">
+                            {project.id === 'hoster' ? 'UI PREVIEW' : 'SCREENSHOTS'}
+                        </p>
+
+                        {project.id === 'hoster' && (
+                            <p className="mt-4 max-w-2xl text-sm leading-7 text-neutral-500">
+                                This is a demo interface showing the planned product
+                                experience. The production React frontend is currently in
+                                development; the backend and APIs are already implemented.
+                            </p>
+                        )}
+
+                        {/* Primary screenshot */}
+                        <div className="group mt-8 overflow-hidden border border-white/10 bg-neutral-950">
+                            <img
+                                src={project.screenshots[0].src}
+                                alt={project.screenshots[0].title}
+                                className="block h-auto w-full transition-transform duration-500 group-hover:scale-[1.01]"
+                            />
+
+                            <div className="border-t border-white/10 px-5 py-4">
+                                <p className="font-mono text-xs tracking-[0.15em] text-neutral-500">
+                                    {project.screenshots[0].title}
+                                </p>
+
+                                {project.screenshots[0].description && (
+                                    <p className="mt-2 text-sm leading-6 text-neutral-600">
+                                        {project.screenshots[0].description}
+                                    </p>
+                                )}
+                            </div>
+                        </div>
+
+                        {/* Additional screenshots */}
+                        {project.screenshots.length > 1 && (
+                            <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                                {project.screenshots.slice(1).map((screenshot) => (
+                                    <div
+                                        key={screenshot.src}
+                                        className="group overflow-hidden border border-white/10 bg-neutral-950 transition-colors duration-300 hover:border-white/20"
+                                    >
+                                        <div className="overflow-hidden">
+                                            <img
+                                                src={screenshot.src}
+                                                alt={screenshot.title}
+                                                className="block h-auto w-full transition-transform duration-500 group-hover:scale-[1.015]"
+                                            />
+                                        </div>
+
+                                        <div className="border-t border-white/10 px-5 py-4">
+                                            <p className="font-mono text-xs tracking-[0.15em] text-neutral-500">
+                                                {screenshot.title}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </section>
+                )}
+
+
                 {/* Features */}
                 {project.features && (
                     <section className="mt-20 border-t border-white/10 pt-12">
@@ -275,7 +340,7 @@ function ProjectDetails() {
                 </section>
                 <div className="h-12" />
             </div>
-        </main>
+        </main >
     )
 }
 

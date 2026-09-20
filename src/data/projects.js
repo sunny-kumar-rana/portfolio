@@ -53,6 +53,15 @@ const projects = [
         },
 
         demo: null,
+
+        screenshots: [
+            {
+                src: '/screenshots/hoster/dashboard-preview.png',
+                title: 'Dashboard UI Preview',
+                description:
+                    'Demo interface showing the planned hostel operations dashboard. The production React frontend is currently in development.',
+            },
+        ],
     },
 
     {
@@ -113,6 +122,21 @@ const projects = [
         demo: null,
 
         accent: 'blue',
+
+        screenshots: [
+            {
+                src: '/screenshots/hydration-tracker/dashboard.png',
+                title: 'Dashboard',
+            },
+            {
+                src: '/screenshots/hydration-tracker/water-intake.png',
+                title: 'Water Intake',
+            },
+            {
+                src: '/screenshots/hydration-tracker/statistics.png',
+                title: 'Statistics',
+            },
+        ],
     },
 
     {
@@ -168,6 +192,21 @@ const projects = [
         demo: null,
 
         accent: 'blue',
+
+        screenshots: [
+            {
+                src: '/screenshots/digital-wallet/login.png',
+                title: 'Authentication',
+            },
+            {
+                src: '/screenshots/digital-wallet/dashboard.png',
+                title: 'Wallet Dashboard',
+            },
+            {
+                src: '/screenshots/digital-wallet/transactions.png',
+                title: 'Transaction History',
+            },
+        ],
     },
 
     {
@@ -214,6 +253,29 @@ const projects = [
         demo: null,
 
         accent: 'red',
+
+        screenshots: [
+            {
+                src: '/screenshots/game-hub/home.png',
+                title: 'Game Hub',
+            },
+            {
+                src: '/screenshots/game-hub/snake.png',
+                title: 'Snake',
+            },
+            {
+                src: '/screenshots/game-hub/sudoku.png',
+                title: 'Sudoku',
+            },
+            {
+                src: '/screenshots/game-hub/tic-tac-toe.png',
+                title: 'Tic-Tac-Toe',
+            },
+            {
+                src: '/screenshots/game-hub/image-puzzle.png',
+                title: 'Image Puzzle',
+            },
+        ],
     },
 ]
 
