@@ -1,72 +1,7 @@
 const projects = [
     {
-        id: 'hoster',
-        number: '01',
-        title: 'Hoster',
-        subtitle: 'Hostel Management System',
-        description:
-            'A full-stack hostel management system for managing hostels, rooms, beds, residents, occupancy and rent.',
-        technologies: [
-            'Java 21',
-            'Spring Boot 4',
-            'Spring Security',
-            'JWT',
-            'Spring Data JPA',
-            'PostgreSQL',
-            'MapStruct',
-            'OpenAPI',
-            'React 19',
-            'Vite',
-            'Tailwind CSS',
-        ],
-        status: 'Backend complete · Frontend in development',
-        accent: 'red',
-
-        features: [
-            'JWT-based authentication',
-            'Owner-scoped hostel management',
-            'Hostel, room and bed management',
-            'Resident management with search and pagination',
-            'Bed-based occupancy and check-in / check-out workflows',
-            'Rent and payment tracking',
-            'Pending and overdue rent queries',
-            'Owner-focused dashboard metrics',
-        ],
-
-        technicalHighlights: [
-            'Layered backend architecture with controllers, services, repositories and DTOs',
-            'Stateless authentication with Spring Security and JWT',
-            'Transactional occupancy operations',
-            'MapStruct-based DTO mapping',
-            'Bean validation and centralized exception handling',
-            'OpenAPI / Swagger API documentation',
-        ],
-
-        architecture:
-            'React frontend → REST API → Spring Boot → PostgreSQL',
-
-        github: {
-            backend:
-                'https://github.com/sunny-kumar-rana/Hoster-Backend',
-            frontend:
-                'https://github.com/sunny-kumar-rana/hoster-frontend',
-        },
-
-        demo: null,
-
-        screenshots: [
-            {
-                src: '/screenshots/hoster/dashboard-preview.png',
-                title: 'Dashboard UI Preview',
-                description:
-                    'Demo interface showing the planned hostel operations dashboard. The production React frontend is currently in development.',
-            },
-        ],
-    },
-
-    {
         id: 'hydration-tracker',
-        number: '02',
+        number: '01',
         title: 'Hydration Tracker',
         subtitle: 'Hydration Tracking Application',
         description:
@@ -119,9 +54,9 @@ const projects = [
                 'https://github.com/sunny-kumar-rana/hydration-tracker-frontend',
         },
 
-        demo: null,
+        demo: 'https://hydrationer.vercel.app',
 
-        accent: 'blue',
+        accent: 'red',
 
         screenshots: [
             {
@@ -141,7 +76,7 @@ const projects = [
 
     {
         id: 'digital-wallet',
-        number: '03',
+        number: '02',
         title: 'Digital Wallet',
         subtitle: 'Wallet & Transaction System',
         description:
@@ -189,7 +124,7 @@ const projects = [
                 'https://github.com/sunny-kumar-rana/digital-wallet-frontend',
         },
 
-        demo: null,
+        demo: 'https://digitalwallet-su.vercel.app',
 
         accent: 'blue',
 
@@ -211,7 +146,7 @@ const projects = [
 
     {
         id: 'game-hub',
-        number: '04',
+        number: '03',
         title: 'Game Hub',
         subtitle: 'Browser Games Collection',
         description:
@@ -250,7 +185,7 @@ const projects = [
                 'https://github.com/sunny-kumar-rana/game-hub',
         },
 
-        demo: null,
+        demo: 'https://sunny-kumar-rana.github.io/game-hub/',
 
         accent: 'red',
 
@@ -274,6 +209,71 @@ const projects = [
             {
                 src: '/screenshots/game-hub/image-puzzle.png',
                 title: 'Image Puzzle',
+            },
+        ],
+    },
+
+    {
+        id: 'hoster',
+        number: '04',
+        title: 'Hoster',
+        subtitle: 'Hostel Management System',
+        description:
+            'A full-stack hostel management system for managing hostels, rooms, beds, residents, occupancy and rent.',
+        technologies: [
+            'Java 21',
+            'Spring Boot 4',
+            'Spring Security',
+            'JWT',
+            'Spring Data JPA',
+            'PostgreSQL',
+            'MapStruct',
+            'OpenAPI',
+            'React 19',
+            'Vite',
+            'Tailwind CSS',
+        ],
+        status: 'Backend complete · Frontend in development',
+        accent: 'blue',
+
+        features: [
+            'JWT-based authentication',
+            'Owner-scoped hostel management',
+            'Hostel, room and bed management',
+            'Resident management with search and pagination',
+            'Bed-based occupancy and check-in / check-out workflows',
+            'Rent and payment tracking',
+            'Pending and overdue rent queries',
+            'Owner-focused dashboard metrics',
+        ],
+
+        technicalHighlights: [
+            'Layered backend architecture with controllers, services, repositories and DTOs',
+            'Stateless authentication with Spring Security and JWT',
+            'Transactional occupancy operations',
+            'MapStruct-based DTO mapping',
+            'Bean validation and centralized exception handling',
+            'OpenAPI / Swagger API documentation',
+        ],
+
+        architecture:
+            'React frontend → REST API → Spring Boot → PostgreSQL',
+
+        github: {
+            backend:
+                'https://github.com/sunny-kumar-rana/Hoster-Backend',
+            frontend:
+                'https://github.com/sunny-kumar-rana/hoster-frontend',
+        },
+
+        demo: 'https://sunny-kumar-rana.github.io/hoster-portfolio-preview/',
+
+        screenshots: [
+            {
+                src: '/screenshots/hoster/dashboard-preview.png',
+                title: 'Dashboard UI Preview',
+                description:
+                    'Demo interface showing the planned hostel operations dashboard. The production React frontend is currently in development.',
             },
         ],
     },

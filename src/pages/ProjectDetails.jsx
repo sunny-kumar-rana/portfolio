@@ -304,6 +304,20 @@ function ProjectDetails() {
                     </p>
 
                     <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4">
+                        {project.demo && (
+                            <a
+                                href={project.demo}
+                                target="_blank"
+                                rel="noreferrer"
+                                className={`project-link text-sm text-neutral-500 ${project.accent === 'red'
+                                    ? 'project-link-red'
+                                    : 'project-link-blue'
+                                    }`}
+                            >
+                                Live Demo ↗
+                            </a>
+                        )}
+
                         {project.github.backend && (
                             <a
                                 href={project.github.backend}
